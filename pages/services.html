@@ -3,11 +3,11 @@
             <div ng-repeat="service in services">
                 <div class="row service">
                     <div class="col-md-2">
-                        <img src="http://techguystaging.com/files/computer-icon.png" alt="Computer Icon">
+                        <img ng-src="http://techguystaging.com/files/{{service.image}}" alt="Computer Icon">
                     </div>
                     <div class="col-md-10">
                         <h3>{{service.name}}</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed leo non elit placerat facilisis in vel libero. Fusce et purus nec tellus mollis sollicitudin. Pellentesque dui arcu, rutrum in orci vel, varius viverra magna. Nullam at malesuada tortor. Suspendisse eleifend consectetur augue vitae scelerisque. Donec hendrerit risus nec neque ultrices aliquet. Praesent eget mauris tincidunt, pharetra purus eget, pretium orci. Quisque nec neque nec elit convallis maximus. Praesent metus quam, eleifend quis pulvinar non, maximus a diam. Vestibulum volutpat faucibus orci, non volutpat lacus dictum non. Vivamus erat ipsum, gravida ut pretium at, ornare porta nunc. Mauris sit amet felis libero. Praesent nec tempus massa, vel feugiat nisl. Suspendisse tincidunt sodales urna in lobortis. Aenean venenatis mollis placerat.</p>
+                        <p>{{service.description}}</p>
                         <a href="contact.html" class="btn btn-primary">Contact Us</a>
                     </div>
                 </div>
