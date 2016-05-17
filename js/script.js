@@ -11,6 +11,6 @@ var app = angular.module("computer", ['ngRoute'])
         .otherwise({redirectTo: '/main'});
 }])
 
-.controller('MainCtrl', [function(){
-    console.log("This is the Main Controller");
+.controller('MainCtrl', ['$scope', function($scope){
+    console.log($scope);
 }]);
